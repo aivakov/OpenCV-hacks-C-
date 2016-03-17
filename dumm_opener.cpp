@@ -17,9 +17,6 @@ using namespace cv;
 using namespace std;
 
 Mat dumm_opener(char * imgpath) {
-    //create a gui window:
-    
-    //Mat img = imread("C:/15.dumm", CV_LOAD_IMAGE_UNCHANGED); //read the image data in the file "MyPic.JPG" and store it in 'img'
 
 FILE * f = fopen(imgpath,"rb");
 if ( ! f )
@@ -39,17 +36,17 @@ fclose(f);
 Mat img;
 img = Mat(Size(dims[0], dims[1]), CV_16U,pixels);
 
-    if (img.empty()) //check whether the image is loaded or not
+    if (img.empty()) 
      {
-          cout << "Error : Image cannot be loaded..!!" << endl;
-          //system("pause"); //wait for a key press
+          cout << "Image cannot be loaded..!!" << endl;
+          
           throw 0;
      }
      
 Mat img2;
 img.convertTo(img2, CV_16U, 2^(16-dims[2]));
 /*
-     namedWindow("MyWindow", CV_WINDOW_AUTOSIZE); //create a window with the name "MyWindow"
+     namedWindow("MyWindow", CV_WINDOW_AUTOSIZE); //create a window with the name "MyWindow"            /* Optional code to display the image
      imshow("MyWindow", img); //display the image which is stored in the 'img' in the "MyWindow" window
 
      waitKey(0); //wait infinite time for a keypress

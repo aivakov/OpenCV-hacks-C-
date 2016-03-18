@@ -1,5 +1,5 @@
 /*
- * function that opens .dumm files from the chlorophyll fluorescence camera in TrayScan
+ * function that opens .dumm files from the chlorophyll fluorescence camera in TrayScan 
  * 
  * input: path to image (char *)
  * output: Mat in CV_16U

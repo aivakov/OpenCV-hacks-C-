@@ -1,5 +1,5 @@
 /*
- * Function to compute an average image from a vector of single channel Mat images
+ * Function to compute an average image from a vector of single channel Mat images 
  * 
  * Input: stack of images as a vector<Mat>
  * 

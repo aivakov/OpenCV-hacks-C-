@@ -1,7 +1,7 @@
 /*
  * Thresholding using the Otsu two-class method in OpenCV is currently only implemented for 8-bit images (in the threshold() function)
  * 
- * This is a function that does Otsu thresholding on 16-bit or higher bit-depth images (single channel)
+ * This is a function that does Otsu thresholding on single channel 16-bit or higher bit-depth images
  * Iterates through all pixel intensity values between the minimum and maximum in the image and finds the value the minimises the intra-class variance
  * 
  * Takes a single channel image (Mat)
